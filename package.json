@@ -3,19 +3,23 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "prettier": "@imaginary-cloud/prettier-config",
   "scripts": {
     "dev": "vite --host",
     "build": "vite build",
-    "preview": "vite preview --host"
+    "preview": "vite preview --host",
+    "format": "prettier --write \"{,!(node_modules)/**/}*.(js||jsx)\""
   },
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@imaginary-cloud/prettier-config": "^1.0.0",
     "@types/react": "^18.0.24",
     "@types/react-dom": "^18.0.8",
     "@vitejs/plugin-react": "^2.2.0",
+    "prettier": "^2.8.0",
     "sass": "^1.56.1",
     "vite": "^3.2.3"
   }
